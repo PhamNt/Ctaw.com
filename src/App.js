@@ -1,13 +1,12 @@
-
-import Posts from './component/posT';
-
+//import Posts from "./component/posT";
+import Reg from "./component/Register";
 
 function App() {
   return (
     <>
-      <Posts />
+      <Reg />
     </>
-  )
+  );
 }
 
 export default App;
