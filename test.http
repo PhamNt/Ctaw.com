@@ -1,11 +1,11 @@
-POST http://localhost:3500/api/user/register
+POST http://localhost:3000/api/user/register
 Content-Type: application/json
 
 {
-    "name": "Linhhhhhh",
-    "username": "linhh",
-    "email": "linhlinhh@gmail.com",
-    "password": "loverikka"
+    "name": "Đinh Tiến Đạt",
+    "username": "datvn21",
+    "email": "dinhtiendat0201@gmail.com",
+    "password": "datvn21"
 }
 
 ###
@@ -13,8 +13,8 @@ POST http://localhost:3000/api/user/login
 Content-Type: application/json
 
 {
-    "username": "datvn22",
-    "password": "loverikka"
+    "username": "datvn21",
+    "password": "datvn21"
 }
 ###
 POST http://localhost:3000/api/user/logout
@@ -24,17 +24,16 @@ POST http://localhost:3000/api/user/refreshtoken
 Content-Type: application/json
 
 {
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJlY2E0YTMxN2I3YTQxNTMzYjE3MjkiLCJ1c2VybmFtZSI6ImRhdHZuMjIiLCJpYXQiOjE2NDAyMjk0NTEsImV4cCI6MTY0MDIzMzA1MX0.vVptqs1jr1RQHqJts8iZkNxTzTkNOOdc9bQp2uOWd_8"
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM1ZGNkMzM1MmQ2NmZhMzZmYWViMDQiLCJ1c2VybmFtZSI6ImRhdHZuMjEiLCJpYXQiOjE2NDAzOTI4MTQsImV4cCI6MTY0MDM5NjQxNH0.R-PTldJPk7u2BbzXBfmbGjIIGDVJjQbV8mRsEcIOci4"
 }
 ###
 POST http://localhost:3000/api/createpost
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWMzMmFiOThlODEyNDBmNzQxYzFmNTEiLCJ1c2VybmFtZSI6ImxpbmhoIiwiaWF0IjoxNjQwMTgwNTE5LCJleHAiOjE2NDAxODA1MzR9.pHzabZvbJu2Tjo9cUw5sIZnoLsuKhY5QF8WZgG7C9H8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM1ZGNkMzM1MmQ2NmZhMzZmYWViMDQiLCJ1c2VybmFtZSI6ImRhdHZuMjEiLCJpYXQiOjE2NDAzOTI5ODQsImV4cCI6MTY0MDM5Mjk5OX0.ESyj3d-HADAJi3lZFas9OaPxex3X3pNd8hjQE1nAxJA
 Content-Type: application/json
 
 {
-    "title": "demo post",
-    "status": "Private",
-    "content": "Rikka is so so so so so so so so so so so cute!"
+    "title": "Part 2: Xin Lỗi Rem, Anh yêu Rikka",
+    "content": "Rikka Takanashi is a chūnibyō practitioner who enrolls in Icho Private High School, the same school as Yuuta Togashi. Unlike Yuuta, she still suffers from chūnibyō (eighth-grader syndrome). She believes she is a sorceress possessed by the Tyrant's Eye Eye of the Wicked Lord in the English dub) that will reveal destinies. She wears a medical eyepatch over her right eye to seal her Tyrant's Eye. Those who have seen her Tyrant's Eye are considered as completely signing a contract with her. She moved into the apartment above Yuuta's apartment to stay with her sister, Tōka Takanashi"
 }
 ###
 GET http://localhost:3000/api/getposts
@@ -44,11 +43,11 @@ GET http://localhost:3000/api/linhh/getposts
 GET http://localhost:3000/api/linhh/posts
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJlY2E0YTMxN2I3YTQxNTMzYjE3MjkiLCJ1c2VybmFtZSI6ImRhdHZuMjIiLCJpYXQiOjE2NDAyMjk1NjcsImV4cCI6MTY0MDIyOTU4Mn0.62S-rk2sm4GMH_CDwvAvKdHA160eDloo7tK_7PftGBA
 ###
-DELETE http://localhost:3000/api/deletepost/61beea5addc0b3f5f5782746
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJlZWI1NGRkYzBiM2Y1ZjU3ODI3NWIiLCJ1c2VybmFtZSI6ImRhdHZuMjEiLCJpYXQiOjE2Mzk5MDIwNjcsImV4cCI6MTYzOTkwMjA4Mn0.b4sm2YQcgFh8Z_Q8d4VJ7BdMbPH4iB55nhMPHtFv5q8
+DELETE http://localhost:3000/api/deletepost/61c5badb78b65c4b82af3661
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJlY2E0YTMxN2I3YTQxNTMzYjE3MjkiLCJ1c2VybmFtZSI6ImRhdHZuMjIiLCJpYXQiOjE2NDAzNTYxMDYsImV4cCI6MTY0MDM1NjEyMX0.4Nl3weYmdVFSy-Jw6iH8UDkt1aeeOudIH-m5G-6ftXg
 ###
 PATCH http://localhost:3000/api/updatepost/61beea5addc0b3f5f5782746
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJlY2E0YTMxN2I3YTQxNTMzYjE3MjkiLCJ1c2VybmFtZSI6ImRhdHZuMjIiLCJpYXQiOjE2NDAxODc1NTEsImV4cCI6MTY0MDE4NzU2Nn0.i-kMrxzKS41UKJAreCNpC21R35u_0j_5h9oR0paW2dQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM1ZGNkMzM1MmQ2NmZhMzZmYWViMDQiLCJ1c2VybmFtZSI6ImRhdHZuMjEiLCJpYXQiOjE2NDAzOTI5NTIsImV4cCI6MTY0MDM5Mjk2N30.DiDtL6CGSZni3gKhOBByAdr3yf-e8S3XxyS4xyLSTi4
 Content-Type: application/json
 
 {
